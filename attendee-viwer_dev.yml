@@ -1,0 +1,13 @@
+---
+# this manifest deploys the rsoter application
+applications:
+  - name: attendee-viewer
+    memory: 1G
+    instances: 1
+    buildpack: java_buildpack
+    env:
+      SPRING_ACTIVE_PROFILES: cloud
+    services:
+      - configserver
+    timeout: 120
+      
