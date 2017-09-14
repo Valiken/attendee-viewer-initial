@@ -7,8 +7,7 @@ applications:
     buildpack: java_buildpack
     env:
       SPRING_PROFILES_ACTIVE: cloud
-      CLIENT_ID: c892b7dc832ab743a164
-      CLIENT_SECRET: 7a7110ff5683b13b203d9ecc6eaa112421f6a3bc
     services:
       - configserver
+      - gitSecrets
     timeout: 120
